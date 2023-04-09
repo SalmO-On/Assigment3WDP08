@@ -1,0 +1,97 @@
+body {
+    text-align: center;
+    align-items: center;
+    background-image: url("img/covidback.jpg");
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+    font-size: 20PX;
+    color: white;
+    margin-left: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 1);
+}
+
+input {
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px #cbced1, inset -12px -12px 12px white;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container {
+    width: fit-content;
+    margin: auto;
+    padding: 20px 50px 20px 50px;
+    margin-top: 80px;
+    border-radius: 32px;
+    background: #88c3a2;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#container>div {
+    width: 200px;
+    height: 200px;
+}
+
+.activeCasesDiv {
+    background-color: #0c5e07;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.newCasesDiv {
+    background-color: #189140;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.recoveredCasesDiv {
+    background-color: #00b33c;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.totalCasesDiv {
+    background-color: #389f65;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.totalDeadthsDiv {
+    background-color: #5cb080;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.totalTestsDiv {
+    background-color: #99e1b8;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    border-radius: 10px;
+}
