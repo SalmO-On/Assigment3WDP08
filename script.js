@@ -1,10 +1,23 @@
+var contry = document.getElementById("countries");
 const btn = document.querySelector(".btn");
-const inputElement = document.querySelector(".inputElement");
 
+fetch("https://restcountries.com/v3.1/all")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+    // Mengisi pilihan negara
+        for (var i = 0; i < data.length; i++) {
+            var option = document.createElement("option");
+            option.text = data[i].name.common;
+            contry.add(option);
+        }
+    });
 btn.addEventListener("click", getData);
 
 function getData() {
-    let country = inputElement.value;
+
+    let country = contry.value;
     fetch(`https://covid-193.p.rapidapi.com/statistics?country=${country}`, {
         method: 'GET',
         headers: {

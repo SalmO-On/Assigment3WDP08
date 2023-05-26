@@ -4,16 +4,19 @@ body {
     background-image: url("img/covidback.jpg");
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
 .btn {
-    margin-top: 15px;
     padding: 15px 30px 15px 30px;
     border: none;
     border-radius: 10px;
-    background-color: green;
     cursor: pointer;
-    font-size: 20PX;
-    color: white;
-    margin-left: 20px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 1);
 }
 
@@ -32,7 +35,7 @@ input {
     padding: 20px 50px 20px 50px;
     margin-top: 80px;
     border-radius: 32px;
-    background: #88c3a2;
+    background: white;
 }
 
 #container {
