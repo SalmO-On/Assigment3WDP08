@@ -1,4 +1,4 @@
-var contry = document.getElementById("countries");
+let contry = document.getElementById("countries");
 const btn = document.querySelector(".btn");
 
 fetch("https://restcountries.com/v3.1/all")
@@ -6,9 +6,9 @@ fetch("https://restcountries.com/v3.1/all")
         return response.json();
     })
     .then(function (data) {
-    // Mengisi pilihan negara
-        for (var i = 0; i < data.length; i++) {
-            var option = document.createElement("option");
+        // Mengisi pilihan negara
+        for (let i = 0; i < data.length; i++) {
+            let option = document.createElement("option");
             option.text = data[i].name.common;
             contry.add(option);
         }
